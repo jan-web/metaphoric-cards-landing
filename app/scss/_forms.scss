@@ -1,0 +1,279 @@
+.error {
+  color: #990000;
+}
+.form-action .input-wrapper{
+  position: relative;
+  margin-bottom: 24px;
+
+  &_name {
+    margin-bottom: 33px;
+  }
+  &_email {
+    margin-bottom: 60px;
+  }
+
+}
+// .order-course__checkbox-wrapper {
+//   margin-bottom: 25px;
+// }
+.input-wrapper_checkbox-descr {
+  margin-bottom: 20px;
+}
+.text-input {
+  // display: block;
+  // padding-top: 10px;
+  padding-bottom: 7px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(34, 54, 69, 0.8);
+  // background-color: transparent;
+  // color: #223645;
+  color: rgba(34, 54, 69, 0.6);
+  background-color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.text-input:focus + .input-label,
+.text-input:valid:not(:placeholder-shown) + .input-label {
+  bottom: 30px;
+  color: rgba(34, 54, 69, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  transition: all 0.2s ease-in;
+}
+.text-input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  color: rgba(34, 54, 69, 0.45);
+  transition: all 0.2s ease-in;
+}
+
+.submit-button {
+  margin-top: 7px;
+}
+
+.checkbox-wrapper {
+  width: 370px;
+  position: relative;
+  padding-left: 32px;
+}
+.checkbox-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  // margin-top: 40px;
+}
+.checkbox-label {
+  position: absolute;
+  // top: 10px;
+
+}
+.checkbox-input + .checkbox-label {
+  // display: inline-flex;
+  // align-items: center;
+  // user-select: none;
+}
+.checkbox-input + .checkbox-label::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  // flex-shrink: 0;
+  // flex-grow: 0;
+  // border: 1px solid #adb5bd;
+  // border: 1px solid #1F6599;
+  border: 2px solid rgba(31, 101, 153, 0.8);
+  // border: 1px solid hotpink;
+  // border-radius: 0.25em;
+  border-radius: 2px;
+  margin-right: 11px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: 50% 50%;
+  position: absolute;
+  top: 16px;
+  left: -39px;
+  // top: -2px;
+  // left: -38px;
+}
+.checkbox-input + .checkbox-label.checkbox-input_error::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  // flex-shrink: 0;
+  // flex-grow: 0;
+  // border: 1px solid #adb5bd;
+  // border: 1px solid #1F6599;
+  // border: 1px solid rgba(31, 101, 153, 0.8);
+  border: 2px solid #E75F77!important;
+  // border-radius: 0.25em;
+  border-radius: 2px;
+  margin-right: 11px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: 50% 50%;
+  position: absolute;
+  top: 16px;
+  left: -39px;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  // border-color: #0b76ef;
+  // background-color: #0b76ef;
+  border: 2px solid #0A5287;
+  // background-color: #1F6599;
+  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-image: url("../images/chboxcross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* стили при наведении курсора на checkbox */
+.checkbox-input:not(:disabled):not(:checked) + .checkbox-label:hover::before {
+  border: 2px solid #0A5287;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.checkbox-input:not(:disabled):active + .checkbox-label:before {
+  background-color: #EEF8FF;
+  // border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+// .checkbox-input:focus + .checkbox-label::before {
+//   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+// }
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+// .checkbox-input:focus:not(:checked) + .checkbox-label::before {
+//   border-color: rgba(34, 54, 69, 0.45);;
+// }
+/* стили для чекбокса, находящегося в состоянии disabled */
+.checkbox-input:disabled + .checkbox-label::before {
+  border: 1px solid #8BAEC8;
+}
+
+// .checkbox-input_error {
+//   border: 1px solid #E75F77!important;
+// }
+
+.checkbox-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(34, 54, 69, 0.8);
+  &:hover {
+    cursor:pointer;
+  }
+  & span {
+    text-decoration: underline;
+    color: rgba(34, 54, 69, 0.8);
+  }
+}
+
+
+
+  /* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    // left: 14px;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    // display: inline-flex;
+    // align-items: center;
+    // user-select: none;
+    margin-left: 34px;
+    margin-right: 10px;
+    position: relative;
+
+
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    // content: '';
+    // display: inline-block;
+    // width: 1em;
+    // height: 1em;
+    // flex-shrink: 0;
+    // flex-grow: 0;
+    // border: 1px solid #adb5bd;
+    // border-radius: 50%;
+    // margin-right: 0.5em;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: 50% 50%;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    // flex-shrink: 0;
+    // flex-grow: 0;
+    // border: 1px solid #adb5bd;
+    // border: 1px solid #1F6599;
+    border: 2px solid rgba(31, 101, 153, 0.8);
+    // border-radius: 0.25em;
+    border-radius: 50%;
+    margin-right: 11px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // position: absolute;
+
+  }
+  .custom-radio+label[for="yes"]::before {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+  }
+  .custom-radio+label[for="no"]::before {
+    position: absolute;
+    top: -2px;
+    right: 28px;
+  }
+
+
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    // border-color: #b3d7ff;
+      // border-color: #0b76ef;
+  background-color: #EEF8FF;
+
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #EEF8FF;
+    // border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  // .custom-radio:focus+label::before {
+  //   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  // }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  // .custom-radio:focus:not(:checked)+label::before {
+  //   border-color: #80bdff;
+  // }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    // border-color: #0b76ef;
+    // background-color: #0b76ef;
+    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+
+  border: 2px solid #0A5287;
+  background: #EEF8FF;
+  background-image: url("../images/chboxpoint.svg") ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }

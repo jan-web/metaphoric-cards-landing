@@ -1,0 +1,77 @@
+.format-and-price {
+  position: relative;
+  z-index: 99;
+  &__bluebox {
+    position: absolute;
+    z-index: -98;
+    background-color: #8BAEC8;
+    height: 287px;
+    width: 100%;
+  }
+  &__wrapper {
+    padding-top: 79px;
+    padding-bottom: 101px;
+    text-align: center;
+    background: #F5F2EE;
+    border-radius: 15px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    color: #1F6599;
+    margin: 0;
+    margin-bottom: 21px;
+  }
+  &__descr {
+    width: 595px;
+    margin: auto;
+    margin-bottom: 52px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(9, 32, 49, 0.8)
+  }
+  &__cards {
+    list-style: none;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cardtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: #1F6599;
+    margin-bottom: 18px;
+  }
+  &__carddescr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    color: #092031;
+    opacity: 0.7;
+    max-width: 132px;
+  }
+  // &__buttons {
+  //   & a:first-of-type {
+  //     margin-right: 46px;
+  //   }
+  // }
+  &__register {
+    font-weight: 500;
+    color: #1F6599;
+  }
+
+  &__empty {
+    height: 153px;
+    background-color: #8BAEC8;
+  }
+}

@@ -1,0 +1,24 @@
+.go-up {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 25px;
+	color: rgba(34, 54, 69, 0.5);
+  text-decoration: none;
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  // left: 40px;
+  right: 95%;
+  transition: ease;
+	z-index: 200;
+  transition: all 0.06s linear;
+  &__absolut {
+    // position: relative;
+    color: rgba(249,252,255,0.7);
+  }
+  &__bottom-up {
+    bottom: 96px;
+
+  }
+}

@@ -1,0 +1,72 @@
+// opinion
+.swiper-container {
+  width: 1200px;
+  // height: 470px;
+  padding: 10px;
+  &__img {
+    padding-top: 20px;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 296px;
+}
+
+
+
+// diploms
+.swiper-container2 {
+  width: 1200px;
+  height: 260px;
+  overflow: hidden;
+  &__img {
+    height: 100%;
+    cursor: pointer;
+  }
+}
+.slider-buttons {
+  position: relative;
+  width: 1334px;
+  margin: auto;
+}
+
+
+.slider-buttons_diploms .swiper-button-prev,
+.slider-buttons_diploms .swiper-button-next {
+  top: 137px;
+}
+
+
+.swiper-button-next img {
+  margin-left: 10px;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  content: '';
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+
+.swiper-slide:hover {
+  transform: scale(1.04);
+  transition: all 0.8s ease;
+}
+.swiper-slide_opinions:hover {
+  transform: none;
+}
+
+.slider-buttons_diploms .swiper-button-prev {
+  left: -58px;
+}
+
+.slider-buttons_diploms .swiper-button-next {
+  right: 78px;
+}
+.swiper-pagination,
+.swiper-pagination_opinions {
+  display: none;
+}

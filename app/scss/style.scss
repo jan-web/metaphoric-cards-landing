@@ -1,0 +1,44 @@
+@import '_norm.scss';
+* {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	position: relative;
+}
+.d-none {
+	display: none!important;
+}
+.d-none-с {
+	display: none;
+}
+
+
+// свыше 1440 Desktop 1440
+.container,
+.container_mobile{
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    // background-color: rgb(213, 213, 236);
+}
+
+
+
+
+@import 'header.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'about-presenter';
+@import 'diploms';
+@import 'format-price';
+@import 'opinions';
+@import 'order-course.scss';
+@import 'footer';
+@import 'swiper';
+@import 'forms';
+@import 'modal';
+@import 'go-up';
+@import 'media768.scss';
+@import 'media640.scss';
+@import 'media480.scss';
+@import 'media320.scss';

@@ -1,0 +1,37 @@
+.about-presenter {
+  background-color: #8BAEC8;
+  // padding-bottom: 100px;
+  &__wrapper {
+    display: flex;
+  }
+  &__info {
+    width: 610px;
+  }
+  &__title {
+    margin-top: 178px;
+    margin-bottom: 41px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    color: #F9FCFF;
+  }
+  &__descr {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #EEF4F9;
+  }
+  &__foto {
+    margin-top: 149px;
+    width: 500px;
+    height: 500px;
+    background: url(../images/foto_Yaroslava.png) center center/cover no-repeat;
+    // background-repeat: no-repeat;
+    border-radius: 100%;
+    margin-left: auto;
+  }
+}
